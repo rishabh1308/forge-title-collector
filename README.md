@@ -12,6 +12,18 @@ python3 -m title_collector https://example.com https://www.python.org https://ww
 
 Results are written to `output/titles.json` by default. Use `--output path.json` to choose another location.
 
+## Web app (Vercel)
+
+The project also includes a deployment-ready browser interface. Paste up to ten public HTTP(S) URLs, collect their titles, and download the resulting JSON report. The serverless endpoint rejects local and private literal IP addresses before making a request.
+
+For a Vercel deployment, import this repository or run:
+
+```bash
+npx vercel --prod
+```
+
+Vercel serves `public/` and routes `POST /api/collect` to the Python collector. No environment variables are required.
+
 ## Agent architecture
 
 ```mermaid

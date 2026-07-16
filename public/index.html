@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fetch webpage titles and export a verified JSON report.">
+    <title>Forge Title Collector</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">NMG Labs · Forge Sprint 02</p>
+      <h1>Title Collector</h1>
+      <p class="intro">Fetch page titles, review each result, and download a JSON report.</p>
+      <form id="collector-form">
+        <label for="urls">URLs <span>one per line, up to 10</span></label>
+        <textarea id="urls" name="urls" required placeholder="https://example.com&#10;https://www.python.org"></textarea>
+        <button type="submit">Collect titles</button>
+      </form>
+      <p id="message" role="status" aria-live="polite"></p>
+      <section id="results" hidden aria-live="polite">
+        <div class="result-heading"><h2>Results</h2><button id="download" type="button">Download JSON</button></div>
+        <div id="result-list"></div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -6,3 +6,6 @@ requires-python = ">=3.10"
 
 [tool.unittest]
 start-directory = "tests"
+
+[tool.vercel]
+entrypoint = "api.collect:handler"
