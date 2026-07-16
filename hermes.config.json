@@ -1,0 +1,15 @@
+{
+  "model": {
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "apiKey": "${GROQ_API_KEY}"
+  },
+  "memory": {
+    "enabled": true,
+    "persistence": "local"
+  },
+  "skills": {
+    "autoLearn": true,
+    "directory": "./skills"
+  }
+}

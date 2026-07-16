@@ -1,0 +1,8 @@
+[project]
+name = "forge-title-collector"
+version = "0.1.0"
+description = "NMG Forge Sprint 02 two-agent mini challenge"
+requires-python = ">=3.10"
+
+[tool.unittest]
+start-directory = "tests"
